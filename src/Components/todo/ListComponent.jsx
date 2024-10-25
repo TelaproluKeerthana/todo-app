@@ -39,6 +39,9 @@ const ListComponent = () => {
       console.log('update clicked')
       navigate(`/todo/${id}`)
     }
+    const addTodo =()=>{
+      navigate(`/todo/-1`)
+  }
     return (
       <div >
         <h1>Listing Todos</h1>
@@ -68,6 +71,9 @@ const ListComponent = () => {
             ))}
           </tbody>
         </table>
+        <div className="btn btn-success" onClick={addTodo}>
+         Add Todo
+        </div>
         </div>
       </div>
     );

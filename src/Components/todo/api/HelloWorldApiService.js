@@ -1,4 +1,5 @@
-import axios from 'axios';
+import { apiClient } from './ApiClient';
+export const retriveHelloWorldBean=()=> apiClient.get("/hello-world-bean",{
+})
 
-export const retriveHelloWorldBean=()=> axios.get("http://localhost:8080/hello-world-bean")
  

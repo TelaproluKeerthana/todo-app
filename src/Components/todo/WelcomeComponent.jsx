@@ -1,6 +1,7 @@
 import { useParams,Link } from "react-router-dom";
 import { useState } from "react";
 import { retriveHelloWorldBean } from "./api/HelloWorldApiService";
+import { useAuth } from "./security/AuthContext";
 const WelcomeComponent = () => {
 
     const { username } = useParams();
